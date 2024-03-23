@@ -1,0 +1,242 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{calc} % added
+\usepackage{ragged2e}
+
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    \begin{minipage}[t]{0.99\linewidth} % Adjust the width as needed
+      {#1}
+    \end{minipage}
+    \vspace{1pt} % Adjust the space between elements as needed
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheadingLeftOneRow}[2]{% % added
+\begin{description}[leftmargin=!,labelwidth=\widthof{\small\bfseries #1}]
+    \item[\small #1]{\textit{\small  #2}}
+\end{description}
+}
+
+\newcommand{\resumeSubSubheadingLeftTwoRows}[4]{%
+\begin{description}[leftmargin=!,labelwidth=\widthof{\small\bfseries #1}]
+    \item[\small #1]{\textit{\small  #2}}
+    \item[\small #3]{\textit{\small  #4}}
+\end{description}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeItemSubListHeading}[1]{
+  \vspace{-7pt}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      {\small#1}
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemSubListStart}{\begin{itemize}[label=--]\vspace{3pt}}
+\newcommand{\resumeItemSubListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Maksim Khvostov} \\ \vspace{1pt}
+    \small +370-660-49-220 $|$ \href{mailto:mkliverout@gmail.com}{\underline{mkliverout@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/makentoshe}{\underline{linkedin.com/in/makentoshe}} $|$
+    \href{https://github.com/Makentoshe}{\underline{github.com/Makentoshe}}
+\end{center}
+
+\vspace{5pt}\small{ Interested in any programming problems and Android memory leaks. Have deep experience in Jetpack Compose and retail projects. }
+\begin{itemize}[label=\hbox{\tiny$\bullet$}]\vspace{-5pt}
+\item\small{ Have 3+ years of commercial experience.}\vspace{-5pt}
+\item\small{ Have 3 years of mentoring and teaching experience. }\vspace{-5pt}
+\item\small{ Have 6 years of Android development experience in general. }\vspace{-5pt}
+\end{itemize}\vspace{-5pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{Oct. 2022 -- Present}
+      {EPAM Systems - THAT Concept Store}{Remote, Lithuania}
+      
+      \resumeItemListStart
+        \resumeItem{
+               Managed and executed application migration from default Android views to Jetpack Compose and was responsible for UI design kit which minimized maintenance overhead and development time by 30\%.
+        }
+        \resumeItem{
+            Revamped the application into a multi-module structure, slashing build time by approximately 23%.
+        }
+        \resumeItem{
+            Fortified application stability by incorporating logging and analytic systems, resulting in a $\sim$15\% improvement.
+        }
+      \resumeItemListEnd
+     
+      \resumeSubheading
+      {Software Engineer}{Aug. 2022 -- Dec. 2022}
+      {EPAM Systems - Animeal}{Remote, Lithuania}
+      
+      \resumeItemListStart
+       \resumeItem{ 
+           Improved git flow processes and introduced issues decomposition for whole team which may enhance code quality gates up to 20-30\%.
+        }
+      \resumeItemListEnd
+      
+      \resumeSubheading
+        {Software Engineer}{Aug. 2021 -- Aug. 2022}
+        {EPAM Systems - Beacons }{Hybrid, Saint-Petersburg}
+      
+      \resumeItemListStart
+            \resumeItem { 
+	      Configured CI/CD pipelines, static analysis, and designed release processes for application, which
+reduced the time between code review and task completion by 30\% 
+            }
+	  \resumeItem { 
+             	Maintaied navigation and pathfinding functional, integrated a real-time monitoring system
+            }
+      \resumeItemListEnd
+  
+    \resumeSubheading
+      {Android Specialist (part time contract position)}{Nov. 2019 -- Dec. 2021}
+      {JetBrains Academy (Hyperskill)}{Remote, Saint-Petersburg}
+      
+
+      \resumeItemListStart
+        \resumeItem{ 
+            Implemented a library for unit and integrated tests which fastest project preparation up to 50\%.
+        }      
+        \resumeItem{ 
+            Provided full support for creating an online Android course and introduced a projects quality gates.
+        }      
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Android Developer (Summer internship)}{Jul. 2020 -- Sep. 2020}
+      {JetBrains (Space)}{Remote, Saint-Petersburg}
+      
+      \resumeItemListStart
+        \resumeItem{ 
+	Implemented screens architecture which still has been used in the application.
+       }      
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Bonch-Bruevich Saint-Petersburg State University of Telecommunications}{2019 -- 2021}
+      {Master's degree, Automation of Technological Processes and Facilities}{Saint-Petersburg, Russia}
+    \resumeSubheading
+      {The Bonch-Bruevich Saint-Petersburg State University of Telecommunications}{2015 -- 2019}
+      {Bachelor's degree, Automation of Technological Processes and Facilities}{Saint-Petersburg, Russia}
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Kotlin, C++} \\
+     \textbf{Frameworks and Libraries}{: Jetpack Compose, Coroutines, Room, JUnit, Mockk, Mockito, Robolectric } \\
+     \textbf{Databases}{: SQLite, MongoDB } \\
+     \textbf{Architecture and Design}{: REST, MVI, MVVM } \\
+     \textbf{Developer Tools}{: Gradle, Git, MAT } \\
+     \textbf{CI/CD}{: GitLab CI/CD, Docker, TeamCity, AppCenter} \\
+    }}
+ \end{itemize}
+
+
+%-----------LANGUAGES-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{English}{: Intermediate (B2)} \\
+     \textbf{Russian}{: Native}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
