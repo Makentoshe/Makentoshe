@@ -1,6 +1,6 @@
 Wassup, My name is Makson and I'm Android developer.
 
-Currently working at EPAM.
+Currently working at Devexperts.
 
 You can find my CV [here](https://github.com/Makentoshe/Makentoshe/blob/main/cv-short-source.pdf).
 
